@@ -8921,8 +8921,14 @@ IF SELECTCOM == 309
 				;PRINTFORMW 
 			;2회째 이후
 			ELSE
-				;연모 or 복종 or 친구
-				IF TALENT:연모 || TALENT:복종 || TALENT:친구
+				;연모 or 연인
+				IF TALENT:연모 || TALENT:연인
+					;PRINTFORMW 
+				;복종
+				ELSEIF TALENT:복종
+					;PRINTFORMW 
+				;친구
+				ELSEIF TALENT:친구
 					;PRINTFORMW 
 				;그 이외
 				ELSE
@@ -8936,8 +8942,14 @@ IF SELECTCOM == 309
 				;PRINTFORMW 
 			;2회째 이후
 			ELSE
-				;연모 or 복종 or 친구
-				IF TALENT:연모 || TALENT:복종 || TALENT:친구
+				;연모 or 연인
+				IF TALENT:연모 || TALENT:연인
+					;PRINTFORMW 
+				;복종
+				ELSEIF TALENT:복종
+					;PRINTFORMW 
+				;친구
+				ELSEIF TALENT:친구
 					;PRINTFORMW 
 				;그 이외
 				ELSE
@@ -9110,7 +9122,7 @@ IF SELECTCOM == 321
 				CALL FACE_IMAGE_N("표정_12_일반_6")
 				PRINTW 「쓰다듬어도 되냐고요...?」
 				CLEARLINE 11
-				CALL FACE_IMAGE_N("표정_12_일반_13")
+				CALL FACE_IMAGE_N("표정_12_일반_23")
 				PRINTL 「쓰다듬어도 되냐고요...?」
 				PRINTW 「저, 저를요?! 아, 그게, 만지셔도 되는데, 저는 그다지...」
 				CALL FACE_IMAGE_N("표정_12_일반_12")
@@ -9153,9 +9165,10 @@ IF SELECTCOM == 321
 						CASE 0
 							PRINTDW  아차, 하루카의 저 귀여운 반응을 보느라 잠시 손이 멈췄다.
 							PRINTDL  마저 쓰다듬어줘야...
-							CALL FACE_IMAGE_N("표정_12_일반_13")
+							CALL FACE_IMAGE_N("표정_12_일반_17")
 							PRINTW 「ㅈ, 제, 제가 귀엽다고요?!?!」
 							PRINTDW  ...무심코 속마음이 입밖으로 튀어나온 듯 하다.
+							CALL FACE_IMAGE_N("표정_12_일반_4")
 							PRINTW 「아아아아, 아뇨! 함부로 착각하지 않겠습니다! 저따위한테 그런 말은 어울리지가...」
 							CALL FACE_IMAGE_N("표정_12_일반_9")
 							PRINTDL  쓰담쓰담쓰담...
@@ -9179,10 +9192,10 @@ IF SELECTCOM == 321
 							CALL FACE_IMAGE_N("표정_12_일반_1")
 							PRINTW 「그, 그게... 싫지는, 않았는데요...」
 							CLEARLINE 11
-							CALL FACE_IMAGE_N("표정_12_일반_8")
+							CALL FACE_IMAGE_N("표정_12_일반_20")
 							PRINTL 「그, 그게... 싫지는, 않았는데요...」
 							PRINTW 「...반대로, 마음이 편안했어요...」
-							CALL FACE_IMAGE_N("표정_12_일반_10")
+							CALL FACE_IMAGE_N("표정_12_일반_21")
 							PRINTDL  스윽스윽...
 							PRINTW 「아, 에헤헤♪」
 							PRINTFORMDW  이렇게 귀여운 애를 쓰다듬지 않고선 배길 수 없던 %조사처리(ANAME(MASTER),"였")%다.
@@ -9204,10 +9217,10 @@ IF SELECTCOM == 321
 							PRINTDW  싫으면 얘기해도 돼.
 							CALL FACE_IMAGE_N("표정_12_일반_12")
 							PRINTW 「아아, 아뇨! 제가 감히 선생님보고 싫다고 말할 수는 없어요...!」
-							CALL FACE_IMAGE_N("표정_12_일반_7")
+							CALL FACE_IMAGE_N("표정_12_일반_15")
 							PRINTW 「그냥, 누가 이렇게 다정하게 쓰다듬거나 하는 게 낯설어서요...」
 						CASE 2
-							CALL FACE_IMAGE_N("표정_12_일반_12")
+							CALL FACE_IMAGE_N("표정_12_일반_22")
 							PRINTW 「으와아앗?! 서, 선생님?? 갑자기 제 머리는 왜...?」
 							CLEARLINE 11
 							CALL FACE_IMAGE_N("표정_12_일반_1")
